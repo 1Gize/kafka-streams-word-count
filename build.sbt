@@ -7,7 +7,9 @@ lazy val root = (project in file("."))
     name := "spark-streams-word-count"
   )
 libraryDependencies += "org.apache.kafka" % "kafka-streams" % "3.1.0"
-libraryDependencies += "org.apache.kafka" % "kafka-streams-scala" % "3.1.0"
+//libraryDependencies ++= Seq("com.lightbend" %% "kafka-streams-scala" % "2.12.8")
+libraryDependencies += "org.apache.kafka" %% "kafka-streams-scala" % "3.1.0"
+
 
 libraryDependencies += "org.slf4j" % "slf4j-api" % "1.7.36"
 libraryDependencies += "org.slf4j" % "slf4j-reload4j" % "1.7.36"
